@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcherp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcherp_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kalkulatorr"
+        tools:targetApi="31">
+
+        <!-- Halaman Home -->
+        <activity
+            android:name=".home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Halaman Kalkulator -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Halaman About -->
+        <activity
+            android:name=".about"
+            android:exported="false" />
+
+        <!-- Halaman Riwayat -->
+        <activity
+            android:name=".item_riwayat"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Halaman Pilih Gambar -->
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false" />
+
+        <!-- Halaman Sensor -->
+        <activity
+            android:name=".SensorActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
